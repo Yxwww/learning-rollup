@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "controllers/*": ["controllers/*"],
+            "rendering/*": ["rendering/*"],
+            "state/*": ["state/*"],
+            "types": ["types"],
+            "types/*": ["types/*"],
+            "utils": ["utils"],
+            "utils/*": ["utils/*"],
+            "webgl/*": ["webgl/*"],
+            "workers/*": ["workers/*"],
+            "events/*": ["events/*"]
+        },
+        "outDir": "./build",
+        "target": "es5",
+        "module": "esNext",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "lib": ["dom", "es2018"],
+        "allowJs": true,
+        "downlevelIteration": true,
+        "declaration": true
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["./src/legacy/**", "./src/__tests__" ,"./src/**/*.test.ts"]
+}
